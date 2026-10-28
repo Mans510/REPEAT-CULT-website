@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Repeat Cult — Batch Drops, Not Trends</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="ticker-bar">
+    <div class="ticker-inner" id="tickerInner"></div>
+  </div>
+
+  <header>
+    <div class="wrap nav">
+      <a href="#top" class="logo-block">
+        <span class="logo-mark">RC</span>
+        <span class="logo-text">Repeat Cult<small>Amritsar · Est. drops</small></span>
+      </a>
+      <ul class="links">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#batch-002">Batch 002</a></li>
+        <li><a href="#batch-001">Archive</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="icon-btn" aria-label="Search">SRC</button>
+        <button class="icon-btn menu-toggle" aria-label="Menu">≡</button>
+        <button class="icon-btn" aria-label="Cart" id="cartBtn" onclick="openCart()">0</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero" id="top">
+    <div class="hero-copy">
+      <span class="eyebrow">Dispatch from Amritsar</span>
+      <h1 class="display">Culture <span class="hl">Over</span> Clothing</h1>
+      <p class="hero-sub">Every Repeat Cult tee ships in a numbered batch, not an endless catalog. 250 GSM heavyweight cotton, oversized cut, printed for people who don't dress to disappear.</p>
+      <div class="hero-cta">
+        <a href="#batch-002" class="btn">Shop Batch 002</a>
+        <a href="#story" class="btn ghost">Read the manifesto</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="stamp fill rot-a">
+        <span>Est.</span>
+        <span class="big">RC</span>
+        <span>Amritsar</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="section-label" id="batch-002">
+      <div>
+        <span class="num mono">DROP 02 / LIVE NOW</span>
+        <h2 class="display">Batch — 002</h2>
+      </div>
+      <a href="#" class="view-all">View full catalog →</a>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <div class="card-media">
+          <span class="tag sale">Sale</span>
+          <div class="swatch-media" style="background:#111114; color:#f3f2ea;">
+            <span>MIDNIGHT Z</span><span>BLACK</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Midnight Z Black</h3>
+          <div class="price-row"><span>Rs. 1,199</span><span class="strike">Rs. 1,599</span></div>
+        </div>
+        <div class="card-foot"><button onclick="addToCart('Midnight Z Black', 1199, 'M')">Add</button><button onclick="addToCart('Midnight Z Black', 1199, 'L')">Choose</button></div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <span class="tag sale">Sale</span>
+          <img src="https://repeatcult.com/cdn/shop/files/IMG_2862.webp?v=1784916291&width=500" alt="Electric Royal Blue">
+        </div>
+        <div class="card-body">
+          <h3>Electric Royal Blue</h3>
+          <div class="price-row"><span>Rs. 1,199</span><span class="strike">Rs. 1,599</span></div>
+        </div>
+        <div class="card-foot"><button onclick="addToCart('Electric Royal Blue', 1199, 'M')">Add</button><button onclick="addToCart('Electric Royal Blue', 1199, 'L')">Choose</button></div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <span class="tag sale">Sale</span>
+          <img src="https://repeatcult.com/cdn/shop/files/IMG_2869.webp?v=1784915428&width=500" alt="Cloud Sky Blue">
+        </div>
+        <div class="card-body">
+          <h3>Cloud Sky Blue</h3>
+          <div class="price-row"><span>Rs. 1,199</span><span class="strike">Rs. 1,599</span></div>
+        </div>
+        <div class="card-foot"><button onclick="addToCart('Cloud Sky Blue', 1199, 'M')">Add</button><button onclick="addToCart('Cloud Sky Blue', 1199, 'L')">Choose</button></div>
+      </article>
+
+      <article class="card">
+        <div class="card-media">
+          <span class="tag sale">Sale</span>
+          <img src="https://repeatcult.com/cdn/shop/files/IMG_2891.jpg?v=1784916391&width=500" alt="Grey Culture 2.0">
+        </div>
+        <div class="card-body">
+          <h3>Grey Culture 2.0</h3>
+          <div class="price-row"><span>Rs. 999</span><span class="strike">Rs. 1,599</span></div>
+        </div>
+        <div class="card-foot"><button onclick="addToCart('Grey Culture 2.0', 999, 'M')">Add</button><button onclick="addToCart('Grey Culture 2.0', 999, 'L')">Choose</button></div>
+      </article>
+    </div>
+
+    <div class="section-label" id="batch-001">
+      <div>
+        <span class="num mono">DROP 01 / ARCHIVE</span>
+        <h2 class="display">Batch — 001</h2>
+      </div>
+      <a href="#" class="view-all">View archive →</a>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <div class="card-media">
+          <div class="swatch-media" style="background:#e6ff3c; color:#111;">
+            <span>YELLOW</span><span>CULTURE</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Yellow Culture</h3>
+          <div class="price-row"><span>Rs. 999</span><span class="strike">Rs. 1,299</span></div>
+        </div>
+        <div class="card-foot"><button onclick="addToCart('Yellow Culture', 999, 'M')">Add</button><button onclick="addToCart('Yellow Culture', 999, 'L')">Choose</button></div>
+      </article>
+      <article class="card">
+        <div class="card-media">
+          <span class="tag sold">Sold out</span>
+          <img src="https://repeatcult.com/cdn/shop/files/IMG_0012_7.jpg?v=1779900966&width=500" alt="Black FAMEGAME">
+        </div>
+        <div class="card-body">
+          <h3>Black FAMEGAME</h3>
+          <div class="price-row"><span>Rs. 999</span><span class="strike">Rs. 1,299</span></div>
+        </div>
+        <div class="card-foot"><button disabled>Notify me</button><button>Choose</button></div>
+      </article>
+      <article class="card">
+        <div class="card-media">
+          <span class="tag sold">Sold out</span>
+          <div class="swatch-media" style="background:#fbfaf5; color:#111;">
+            <span>WHITE</span><span>FAMEGAME</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>White FAMEGAME</h3>
+          <div class="price-row"><span>Rs. 999</span><span class="strike">Rs. 1,299</span></div>
+        </div>
+        <div class="card-foot"><button disabled>Notify me</button><button>Choose</button></div>
+      </article>
+      <article class="card">
+        <div class="card-media">
+          <span class="tag sold">Sold out</span>
+          <div class="swatch-media" style="background:#ff3b1f; color:#fbfaf5;">
+            <span>RED</span><span>CULTURE</span>
+          </div>
+        </div>
+        <div class="card-body">
+          <h3>Red Culture</h3>
+          <div class="price-row"><span>Rs. 999</span><span class="strike">Rs. 1,299</span></div>
+        </div>
+        <div class="card-foot"><button disabled>Notify me</button><button>Choose</button></div>
+      </article>
+    </div>
+  </div>
+
+  <div class="editorial" id="story">
+    <figure class="e1"></figure>
+    <figure class="e2">
+      <span class="mono" style="font-size:11px;letter-spacing:0.14em;color:#a8a690;">The manifesto</span>
+      <h3 class="display">Not just clothing.<br>A mindset.</h3>
+      <p>Repeat Cult started in Amritsar with one belief: streetwear should carry weight, not just a logo.</p>
+      <a href="#batch-002" class="btn" style="background:var(--yellow); color:var(--ink); border-color:var(--yellow);">Shop the drop</a>
+    </figure>
+  </div>
+
+  <div class="wrap"><div class="section-label"><div><span class="num mono">SPOTLIGHT</span><h2 class="display">Featured Piece</h2></div></div></div>
+
+  <div class="featured">
+    <div class="featured-media">
+      <img src="https://repeatcult.com/cdn/shop/files/IMG_2889_JPG.webp?v=1784916391&width=800" alt="front">
+      <img src="https://repeatcult.com/cdn/shop/files/IMG_2890.jpg?v=1784919777&width=800" alt="back">
+      <img src="https://repeatcult.com/cdn/shop/files/IMG_2891.jpg?v=1784916391&width=800" alt="detail">
+      <img src="https://repeatcult.com/cdn/shop/files/IMG_2892.jpg?v=1784916391&width=800" alt="styled">
+    </div>
+    <div class="featured-info">
+      <span class="kicker">BATCH 002 · GREY CULTURE 2.0</span>
+      <h3>Built for everyday expression</h3>
+      <p>A clean minimal front graphic meets a bold signature back print, cut oversized from premium heavyweight cotton.</p>
+      <ul class="spec-list"><li>Oversized fit</li><li>250 GSM cotton</li><li>Front + back print</li><li>Unisex sizing</li></ul>
+      <div><span class="mono" style="font-size:11px; color:var(--grey);">SIZE</span><div class="size-row"><div class="size-box" onclick="pickSize(this)">S</div><div class="size-box active" onclick="pickSize(this)">M</div><div class="size-box" onclick="pickSize(this)">L</div><div class="size-box" onclick="pickSize(this)">XL</div></div></div>
+      <div class="featured-price">Rs. 999 <span>Rs. 1,599</span></div>
+      <a href="#" class="btn" style="width:fit-content;" onclick="addFeaturedToCart(); return false;">Add to cart</a>
+    </div>
+  </div>
+
+  <div class="wrap" id="faq">
+    <div class="section-label"><div><span class="num mono">FAQ</span><h2 class="display">Good to know</h2></div></div>
+    <div id="faqList">
+      <div class="faq-item open"><button class="faq-q" onclick="toggleFaq(this)"><span><span class="idx">01</span>What do you actually make?</span><span class="plus">+</span></button><div class="faq-a"><p>Oversized tees, graphic tees, hoodies, and everyday streetwear.</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span><span class="idx">02</span>Do you ship outside Punjab?</span><span class="plus">+</span></button><div class="faq-a"><p>Yes — across India and to select international destinations.</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span><span class="idx">03</span>Who's behind Repeat Cult?</span><span class="plus">+</span></button><div class="faq-a"><p>Founded by Bir Ramgahria.</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span><span class="idx">04</span>Why batches?</span><span class="plus">+</span></button><div class="faq-a"><p>Small, numbered runs keep every drop deliberate.</p></div></div>
+      <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)"><span><span class="idx">05</span>Is there a store I can visit?</span><span class="plus">+</span></button><div class="faq-a"><p>Yes — Amritsar, Punjab.</p></div></div>
+    </div>
+  </div>
+
+  <div class="newsletter">
+    <div class="wrap" style="display:flex; align-items:center; justify-content:space-between; gap:32px; flex-wrap:wrap; width:100%;">
+      <h3>Get word when the next batch drops.</h3>
+      <form onsubmit="return joinList(event)"><input type="email" placeholder="you@email.com" required><button type="submit">Sign up</button></form>
+    </div>
+  </div>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="foot-brand"><span class="logo-text" style="display:flex;align-items:center;gap:10px;"><span class="logo-mark" style="width:34px;height:34px;font-size:12px;">RC</span> Repeat Cult</span><p>Not just clothing. A mindset.</p></div>
+        <div><h4>Shop</h4><ul><li><a href="#batch-002">Batch 002</a></li><li><a href="#batch-001">Archive</a></li><li><a href="#story">Manifesto</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+        <div><h4>Support</h4><ul><li><a href="#contact">Contact</a></li><li><a href="#">Privacy</a></li><li><a href="#">Refund</a></li><li><a href="#">Shipping</a></li><li><a href="/admin" target="_blank">DB Portal ↗</a></li></ul></div>
+        <div><h4>Find us</h4><div class="foot-map"><iframe loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3397.666179846642!2d74.88920257561539!3d31.61560567417042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39197d44dde186a3%3A0x35553a37df8810c8!2sRepeat%20Cult!5e0!3m2!1sen!2sin!4v1780245958700!5m2!1sen!2sin" title="map"></iframe></div></div>
+      </div>
+      <div class="foot-bottom"><span>© 2026 Repeat Cult, Amritsar · <a href="/admin" style="color:var(--grey);text-decoration:none;">DB Portal ↗</a></span><span>Instagram ↗</span></div>
+    </div>
+  </footer>
+
+  <!-- CART & CHECKOUT DRAWER -->
+  <div class="cart-overlay" id="cartOverlay" onclick="handleOverlayClick(event)">
+    <div class="cart-drawer" id="cartDrawer">
+      <div class="cart-head">
+        <h2>
+          <span>Batch Bag</span>
+          <span class="cart-head-badge" id="drawerCartCountBadge">0 ITEMS</span>
+        </h2>
+        <button class="cart-close-btn" onclick="closeCart()">×</button>
+      </div>
+
+      <div class="cart-body">
+        <!-- ITEM LIST -->
+        <div id="cartItemsContainer">
+          <div class="cart-empty-view">Your bag is empty. Add a piece from Batch 002 to order.</div>
+        </div>
+
+        <!-- SUBTOTAL BOX -->
+        <div class="cart-subtotal-box" id="cartSubtotalBox" style="display:none;">
+          <div class="cart-subtotal-row">
+            <span>Subtotal</span>
+            <span id="drawerSubtotal">₹0</span>
+          </div>
+          <div class="cart-subtotal-row" style="color:var(--grey);">
+            <span>Shipping (Pan-India)</span>
+            <span style="color:var(--ink); font-weight:600;">FREE</span>
+          </div>
+          <div class="cart-subtotal-row total">
+            <span>Total Payable</span>
+            <span id="drawerTotal" style="color:var(--ink);">₹0</span>
+          </div>
+        </div>
+
+        <!-- CHECKOUT & CUSTOMER INFO FORM -->
+        <div class="checkout-section" id="checkoutSection" style="display:none;">
+          <h3>Customer & Delivery Details</h3>
+          <p style="font-size:12px; color:var(--grey); margin-bottom:14px; font-family:'JetBrains Mono',monospace;">
+            Your order will be recorded into the verified customer database.
+          </p>
+
+          <form id="checkoutForm" onsubmit="submitCheckout(event)">
+            <div class="checkout-input-group">
+              <label>Full Name *</label>
+              <input type="text" id="custName" placeholder="e.g. Bir Ramgarhia" required>
+            </div>
+
+            <div class="checkout-grid-2">
+              <div class="checkout-input-group">
+                <label>Email Address *</label>
+                <input type="email" id="custEmail" placeholder="you@repeatcult.com" required>
+              </div>
+              <div class="checkout-input-group">
+                <label>Phone Number *</label>
+                <input type="tel" id="custPhone" placeholder="10-digit mobile" required>
+              </div>
+            </div>
+
+            <div class="checkout-input-group">
+              <label>Delivery Address *</label>
+              <input type="text" id="custAddress" placeholder="Flat, Street, Landmark" required>
+            </div>
+
+            <div class="checkout-grid-2">
+              <div class="checkout-input-group">
+                <label>City *</label>
+                <input type="text" id="custCity" placeholder="Amritsar" value="Amritsar" required>
+              </div>
+              <div class="checkout-input-group">
+                <label>PIN Code *</label>
+                <input type="text" id="custPincode" placeholder="143001" value="143001" required>
+              </div>
+            </div>
+
+            <div class="checkout-grid-2">
+              <div class="checkout-input-group">
+                <label>State</label>
+                <input type="text" id="custState" placeholder="Punjab" value="Punjab">
+              </div>
+              <div class="checkout-input-group">
+                <label>Payment Method</label>
+                <select id="custPayment">
+                  <option value="COD">Cash on Delivery (COD)</option>
+                  <option value="UPI">UPI on Delivery</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="cart-foot" style="margin:20px -24px -20px -24px;">
+              <button type="submit" id="checkoutSubmitBtn" class="btn">
+                Confirm & Place Batch Order →
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ORDER SUCCESS MODAL -->
+  <div class="order-modal-backdrop" id="orderSuccessModal">
+    <div class="order-modal-card">
+      <span class="order-modal-badge">ORDER RECORDED IN DATABASE</span>
+      <h2>Locked In!</h2>
+      <p>Your order has been recorded into the Repeat Cult Customer Database. Our dispatch team in Amritsar is preparing your batch piece.</p>
+
+      <div class="order-receipt-box" id="orderSuccessReceipt">
+        <!-- Injected order summary -->
+      </div>
+
+      <div style="display:flex; gap:10px; justify-content:center; flex-wrap:wrap;">
+        <button class="btn" onclick="closeOrderSuccessModal()">Keep Shopping</button>
+        <a href="/admin" target="_blank" class="btn secondary">View in DB Portal ↗</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
